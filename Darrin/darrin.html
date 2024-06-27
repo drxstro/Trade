@@ -56,6 +56,23 @@
         .footer-section h5 {
             font-weight: 700;
         }
+
+        .footer-section .container {
+            max-width: 1200px;
+        }
+
+        .footer-section .footer-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-section .newsletter-section {
+            margin-bottom: 40px; /* Add more space here if needed */
+        }
+        .emailBtn {
+            width: 31%;
+        }
+
     </style>
 </head>
 
@@ -93,17 +110,17 @@
 
     <!-- Footer -->
     <footer class="footer-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <h5>Sign up for our newsletter</h5>
-                    <p>Be the first to know about our special offers, new product launches, and events</p>
+        <div class="container footer-container">
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 mb-5 newsletter-section">
+                    <h5 class="fs-4">Sign up for our newsletter</h5>
+                    <p class="newsletterP">Be the first to know about our special offers, new product launches, and events</p>
                     <form class="d-flex">
                         <input type="email" class="form-control me-2" placeholder="Email Address">
-                        <button type="submit" class="btn btn-outline-light">Sign Up</button>
+                        <button type="submit" class="emailBtn btn btn-outline-light">Sign Up</button>
                     </form>
                 </div>
-                <div class="col-md-2 mb-3">
+                <div class="col-md-2 mb-3 ms-5 ">
                     <h5>Shop</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Women's</a></li>
@@ -126,7 +143,7 @@
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2 mb-3">
+                <div class="col-md-2 mb-3 ms-2">
                     <h5>About</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">About Us</a></li>
